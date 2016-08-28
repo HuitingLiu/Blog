@@ -9,9 +9,7 @@
 has been allocated statically so that its lifetime or "extent" extends across
 the entire run of the program.<b> ([Link](https://en.wikipedia.org/wiki/Static_variable))
 
-## 2.Scope
-
-### 2.0 Variables in C order by scope
+## 2. Variables in C order by scope
 * Global Variable  
 Global Variable can be used by other modules after extern refrence
 
@@ -21,7 +19,7 @@ Static Variable in file Level is only limited inside the module.
 * Static Variable in function  
 Static Variable in a function can only be used inside the function. When the function was called multiple time, the static variable only initialize only once.
 
-```  
+```c  
 void func() {
 	static int a = 0;
 	a++;
